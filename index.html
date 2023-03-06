@@ -8,11 +8,13 @@
   <title>Tee Time Reservation</title>
 </head>
 <body>
+	<h1>Golf Course Tee Time Reservation</h1>
   <div class="container">
-		<h1>Golf Course Tee Time Reservation</h1>
 		<form>
-			<label for="time">Select a tee time:</label>
+			<label for="time">Select your time:</label>
 			<select id="time" name="time">
+				<option value="9:00am">7:00am</option>
+				<option value="9:00am">8:00am</option>
 				<option value="9:00am">9:00am</option>
 				<option value="10:00am">10:00am</option>
 				<option value="11:00am">11:00am</option>
@@ -23,7 +25,7 @@
 				<option value="4:00pm">4:00pm</option>
 			</select>
       <section>
-			<label for="players">Number of players:</label>
+			<label for="players">Number of players: </label>
 			<input type="number" id="players" name="players" min="1" max="">
 
       <!-- <label for="drinks">Select your drinks:</label>
@@ -57,29 +59,38 @@
 				<option value="orange">Orange ($1.50)</option>
 				<option value="granola-bar">Granola bar ($2.00)</option>
 				<option value="snickers-bar">Snickers bar ($2.00)</option>
-				<option value="m&m's">m&m's ($3.00)</option>
+				<option value="m&m's">m&m's ($2.00)</option>
 				<option value="trail-mix">Trail mix ($3.00)</option>
 				<option value="chips-salsa">Chips and salsa ($4.00)</option>
-				<option value="corn-nuts">Corn nuts ($2.50)</option>
+				<option value="corn-nuts">Corn nuts ($2.00)</option>
 			</select>
 
-      <label for="drinks-quantity">Quantity:</label>
-      <input type="number" id="drinks-quantity" name="drinks-quantity" min="0" max="10">
+      <!-- <label for="drinks-quantity">Quantity:</label>
+      <input type="number" id="drinks-quantity" name="drinks-quantity" min="0" max="10"> -->
 
 			<label for="drinks">Select your drinks:</label>
 			<select id="drinks" name="drinks" multiple>
 				<option value="water">Water ($1.00)</option>
 				<option value="gatorade">Gatorade ($2.50)</option>
-				<option value="beer">Beer ($5.00)</option>
-				<option value="soda">Soda ($2.00)</option>
+				<option value="gatorade">Powerade ($2.50)</option>
+				<option value="beer">Beer ($4.00)</option>
+				<option value="soda">Coca Cola ($1.00)</option>
+				<option value="soda">Fanta ($1.00)</option>
+				<option value="soda">Club Soda ($1.00)</option>
+				<option value="soda">Root Beer ($1.00)</option>
 			</select>
 
-			<label for="equipment">Select your items:</label>
+			<label for="equipment">Pro Shop items:</label>
 			<select id="drinks" name="drinks" multiple>
 				<option value="golf-balls">Golf Balls ($2.00)</option>
 				<option value="gloves">Gloves ($4.50)</option>
-				<option value="towel"> Towel with Course Logs ($12.00)</option>
-				<option value="tees">10 for ($1.00)</option>
+				<option value="gloves">Golf Shirty with Club Logo ($29.90)</option>
+				<option value="towel"> Towel with Course Logo ($12.00)</option>
+				<option value="tees">Tees 10 for ($3.00)</option>
+				<option value="golf-bag">TaylorMade Pro Golf Bag ($350.00)</option>
+				<option value="golf-bag">Nike Pro Golf Bag ($350.00)</option>
+				<option value="golf-bag">Ping Pro Golf Bag ($349.00)</option>
+				<option value="golf-bag">Titelist Pro Golf Bag ($350.00)</option>
 			</select>
 
 			<button type="submit" id="submitBtn">Make Reservation</button>

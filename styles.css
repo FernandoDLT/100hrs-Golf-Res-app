@@ -15,7 +15,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 } */
 
-body {
+* body {
   font-family: 'Montserrat', sans-serif;
   background-image: url('golf-course.jpg');
   height: 100vh;
@@ -24,10 +24,8 @@ body {
   background-position: center;
 }
 
-
-
 .container {
-  max-width: 600px;
+  max-width: 900px;
   margin: auto;
   margin-top: 2%;
   padding: 24px;
@@ -37,10 +35,12 @@ body {
 }
 
 h1 {
-  color:  #3e8e41;
+  color:  #136b49;
   text-align: center;
-  font-size: 40px;
-  margin-top: 0;
+  font-size: 45px;
+  padding-top: 2%;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+
 }
 
 form {
@@ -73,7 +73,7 @@ select[multiple] {
 button {
   display: block;
   margin: 0 auto;
-  background-color: #075c0a;
+  background-color: #136b49;
   color: white;
   padding: 14px 20px;
   margin-top: 20px;

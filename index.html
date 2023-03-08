@@ -11,63 +11,47 @@
 	<h1>Golf Course Tee Time Reservation</h1>
   <div class="container">
 		<form>
-			<label for="time">Select your time:</label>
-			<select id="time" name="time">
-				<option value="9:00am">7:00am</option>
-				<option value="9:00am">8:00am</option>
-				<option value="9:00am">9:00am</option>
-				<option value="10:00am">10:00am</option>
-				<option value="11:00am">11:00am</option>
-				<option value="12:00pm">12:00pm</option>
-				<option value="1:00pm">1:00pm</option>
-				<option value="2:00pm">2:00pm</option>
-				<option value="3:00pm">3:00pm</option>
-				<option value="4:00pm">4:00pm</option>
-			</select>
-      <section>
-			<label for="players">Number of players: </label>
-			<input type="number" id="players" name="players" min="1" max="">
-
-      <!-- <label for="drinks">Select your drinks:</label>
-      <select id="drinks" name="drinks" multiple>
-      <option value="water">Water ($1.00)</option>
-      <label for="water-quantity"></label>
-      <input type="number" id="water-quantity" name="water-quantity" min="0" max="10" value="0"><br>
-
-      <option value="soda">Soda ($2.00)</option>
-      <label for="soda-quantity">Quantity:</label>
-      <input type="number" id="soda-quantity" name="soda-quantity" min="0" max="10" value="0"><br>
-
-      <option value="juice">Juice ($2.50)</option>
-      <label for="juice-quantity">Quantity:</label>
-      <input type="number" id="juice-quantity" name="juice-quantity" min="0" max="10" value="0"><br>
-
-      <option value="beer">Beer ($5.00)</option>
-      <label for="beer-quantity">Quantity:</label>
-      <input type="number" id="beer-quantity" name="beer-quantity" min="0" max="10" value="0"><br>
-
-      <option value="wine">Wine ($7.00)</option>
-      <label for="wine-quantity">Quantity:</label>
-      <input type="number" id="wine-quantity" name="wine-quantity" min="0" max="10" value="0"><br>
-    </select> -->
-
-
-			<label for="snacks">Select your snacks:</label>
-			<select id="snacks" name="snacks" multiple>
-        <option value="apple">Apple ($1.50)</option>
-        <option value="banana">Banana ($1.50)</option>
-				<option value="orange">Orange ($1.50)</option>
-				<option value="granola-bar">Granola bar ($2.00)</option>
-				<option value="snickers-bar">Snickers bar ($2.00)</option>
-				<option value="m&m's">m&m's ($2.00)</option>
-				<option value="trail-mix">Trail mix ($3.00)</option>
-				<option value="chips-salsa">Chips and salsa ($4.00)</option>
-				<option value="corn-nuts">Corn nuts ($2.00)</option>
-			</select>
-
-      <!-- <label for="drinks-quantity">Quantity:</label>
-      <input type="number" id="drinks-quantity" name="drinks-quantity" min="0" max="10"> -->
-
+			<label for="fname">First Name: </label>
+			<input type="text" id="fname" name="fname"><br>
+		
+			<label for="lname">Last Name: </label>
+			<input type="text" id="lname" name="lname"><br>
+		
+			<label for="email">Email Address: </label>
+			<input type="email" id="email" name="email"><br>
+		</form>
+		
+			<label for="teeTime">Select Tee Time: </label>
+			<select id="teeTime" name="teeTime">
+				<option value="7:00am">6:00am</option>
+					<option value="7:00am">7:00am</option>
+					<option value="8:00am">8:00am</option>
+					<option value="9:00am">9:00am</option>
+					<option value="10:00am">10:00am</option>
+					<option value="11:00am">11:00am</option>
+					<option value="12:00pm">12:00pm</option>
+					<option value="1:00pm">1:00pm</option>
+					<option value="2:00pm">2:00pm</option>
+					<option value="3:00pm">3:00pm</option>
+					<option value="4:00pm">4:00pm</option>
+				</select>
+				
+				<label for="players">Enter Number of players: </label>
+				<input type="number" id="players" placeholder="0" name="players" min="1" max="12">
+				
+				<label for="snacks">Select your snacks:</label>
+				<select id="snacks" name="snacks" multiple>
+					<option value="apple">Apple ($1.50)</option>
+					<option value="banana">Banana ($1.50)</option>
+					<option value="orange">Orange ($1.50)</option>
+					<option value="granola-bar">Granola bar ($2.00)</option>
+					<option value="snickers-bar">Snickers bar ($2.00)</option>
+					<option value="m&m's">m&m's ($2.00)</option>
+					<option value="trail-mix">Trail mix ($3.00)</option>
+					<option value="chips-salsa">Chips and salsa ($4.00)</option>
+					<option value="corn-nuts">Corn nuts ($2.00)</option>
+				</select>
+			
 			<label for="drinks">Select your drinks:</label>
 			<select id="drinks" name="drinks" multiple>
 				<option value="water">Water ($1.00)</option>
@@ -79,9 +63,11 @@
 				<option value="soda">Club Soda ($1.00)</option>
 				<option value="soda">Root Beer ($1.00)</option>
 			</select>
+			<!-- <label for="drinks-quantity">Quantity:</label>
+			<input type="number" id="drinks-quantity" name="drinks-quantity" min="0" max="10"> -->
 
-			<label for="equipment">Pro Shop items:</label>
-			<select id="drinks" name="drinks" multiple>
+			<label for="equipment">From the Pro Shop:</label>
+			<select id="proItems" name="proItems" multiple>
 				<option value="golf-balls">Golf Balls ($2.00)</option>
 				<option value="gloves">Gloves ($4.50)</option>
 				<option value="gloves">Golf Shirty with Club Logo ($29.90)</option>
